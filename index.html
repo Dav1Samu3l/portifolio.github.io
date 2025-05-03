@@ -20,10 +20,11 @@
   <!-- Importar CSS: Estilo Principal -->
   <link rel="stylesheet" href="./assets/css/main.css" />
   <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
-
+ <link rel="stylesheet" href="./assets/">  
 </head>
 
 <body>
+
   <div id="particles-js">
     <div class="header">
       <h1>
@@ -51,9 +52,17 @@
         <a class="link" href="#about" data-scroll>Sobre mim</a>
       </div>
     </div>
+
+ 
+
+
+
+
+
+
+
     <a class="down" href="#about" data-scroll><i class="icon fa fa-chevron-down" aria-hidden="true"></i></a>
   </div>
-
   <!-- Seção Sobre -->
   <section id="about">
     <!-- Introdução do Usuário -->
@@ -76,6 +85,42 @@
         parte da sua equipe.
       </p>
     </div>
+    <section id="courses">
+      <div class="user-details">
+        <h1>Certificados</h1>
+        <button id="certificates-btn" class="modal-btn">Certificados</button>
+      </div>
+    </section>
+    
+    <div id="certificates-modal" class="modal">
+      
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        
+        <div class="certificates-gallery">
+
+
+          
+          <div class="certificate-item">
+            <img src="./assets/fonts/1684950260971 (1).jpeg" alt="ront-End com Ract.js">
+            <img src="./assets/fonts/1684950260933 (1).jpeg" alt="ront-End com Ract.js">
+
+            <p>Front-End com Ract.js</p>
+          </div> 
+          <div class="certificate-item">
+            <img src="./assets/fonts/POO40h.jpg" alt="Certificado P.O.O curso em video / Guanabara">
+            <p>Programação Orientada a Objetos (POO)</p>
+          </div>
+                    
+        </div>       
+        <div class="certificate-controls">
+          <button class="prev-btn">&lt;</button>
+          <button class="next-btn">&gt;</button>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="script.js"></script>
+    
 
     <!-- Especificações do Usuário -->
     <div class="user">
@@ -129,6 +174,7 @@
   <script src="./assets/js/sweet-scroll.min.js"></script>
   <!-- Importar JS: Script Principal -->
   <script src="./assets/js/main.js"></script>
+  <script src="./assets/js/modal.js"></script>
 </body>
 
 </html>
