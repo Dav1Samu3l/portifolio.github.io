@@ -1,69 +1,50 @@
-// Quando abrir o modal
-document.body.classList.add('modal-open');
 
-// Quando fechar o modal
-document.body.classList.remove('modal-open');
-
-// Pegar o modal
- const modal = document.getElementById("certificates-modal");
- const btn = document.getElementById("certificates-btn");
- const span = document.getElementsByClassName("close")[0];
- 
- // Controles do carrossel
- const gallery = document.querySelector('.certificates-gallery');
- const prevBtn = document.querySelector('.prev-btn');
- const nextBtn = document.querySelector('.next-btn');
- const items = document.querySelectorAll('.certificate-item');
- let currentIndex = 0;
- 
- // Abrir modal
- btn.onclick = function() {
-   modal.style.display = "block";
-   currentIndex = 0;
-   scrollToItem(currentIndex);
- }
- 
- // Fechar modal
- span.onclick = function() {
-   modal.style.display = "none";
- }
- 
- window.onclick = function(event) {
-   if (event.target == modal) {
-     modal.style.display = "none";
-   }
- }
- 
- // Navegação do carrossel
- function scrollToItem(index) {
-   items[index].scrollIntoView({
-     behavior: 'smooth',
-     block: 'nearest',
-     inline: 'start'
-   });
- }
- 
- prevBtn.addEventListener('click', () => {
-   currentIndex = (currentIndex > 0) ? currentIndex - 1 : items.length - 1;
-   scrollToItem(currentIndex);
- });
- 
- nextBtn.addEventListener('click', () => {
-   currentIndex = (currentIndex < items.length - 1) ? currentIndex + 1 : 0;
-   scrollToItem(currentIndex);
- });
- 
- // Atualiza o índice quando o usuário arrasta manualmente
- gallery.addEventListener('scroll', () => {
-   const scrollPosition = gallery.scrollLeft;
-   const itemWidth = items[0].clientWidth;
-   currentIndex = Math.round(scrollPosition / itemWidth);
- });
-
- // Ao abrir o modal
-modal.style.display = "block";
-document.body.classList.add('modal-open');
-
-// Ao fechar o modal
-modal.style.display = "none";
-document.body.classList.remove('modal-open');
+    // Simulação de funcionalidade dos modais
+    document.addEventListener('DOMContentLoaded', function() {
+      // Elementos dos modais
+      const certificatesBtn = document.getElementById('certificates-btn');
+      const certificatesModal = document.getElementById('certificates-modal');
+      const projectsBtn = document.getElementById('projects-btn');
+      const projectsModal = document.getElementById('projects-modal');
+      const closeButtons = document.querySelectorAll('.close');
+      
+      // Abrir modais
+      if (certificatesBtn) {
+        certificatesBtn.addEventListener('click', () => {
+          certificatesModal.style.display = 'block';
+        });
+      }
+      
+      if (projectsBtn) {
+        projectsBtn.addEventListener('click', () => {
+          projectsModal.style.display = 'block';
+        });
+      }
+      
+      // Fechar modais
+      closeButtons.forEach(btn => {
+        btn.addEventListener('click', function() {
+          this.closest('.modal').style.display = 'none';
+        });
+      });
+      
+      // Fechar ao clicar fora do conteúdo
+      window.addEventListener('click', (e) => {
+        if (e.target.classList.contains('modal')) {
+          e.target.style.display = 'none';
+        }
+      });
+      
+      // Navegação entre itens (simplificada)
+      document.querySelectorAll('.prev-btn').forEach(btn => {
+        btn.addEventListener('click', function() {
+          alert('Funcionalidade de navegação será implementada em breve!');
+        });
+      });
+      
+      document.querySelectorAll('.next-btn').forEach(btn => {
+        btn.addEventListener('click', function() {
+          alert('Funcionalidade de navegação será implementada em breve!');
+        });
+      });
+    });
