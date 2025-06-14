@@ -282,7 +282,7 @@ section {
   color: #ccd6f6;
 }
 
-/* Galeria de certificados - VERSÃO ATUALIZADA */
+/* Galeria de certificados - ATUALIZADO */
 .certificates-gallery {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
@@ -297,8 +297,6 @@ section {
   text-align: center;
   transition: all 0.3s ease;
   border: 1px solid rgba(100, 255, 218, 0.2);
-  position: relative;
-  overflow: hidden; /* Mantido para o container */
 }
 
 .certificate-item:hover {
@@ -312,22 +310,12 @@ section {
   border-radius: 5px;
   object-fit: contain;
   margin-bottom: 1rem;
-  transition: transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94), 
-              z-index 0.5s;
-  position: relative;
-  z-index: 1;
-  transform-origin: center center;
-  will-change: transform;
+  transition: transform 0.3s ease;
+  cursor: pointer;
 }
 
-/* EFEITO APENAS NO HOVER DA IMAGEM */
 .certificate-item img:hover {
-  transform: scale(2.5);
-  z-index: 1000;
-  box-shadow: 0 15px 50px rgba(2, 12, 27, 0.8);
-  border: 2px solid #64ffda;
-  border-radius: 8px;
-  cursor: zoom-in;
+  transform: scale(1.05);
 }
 
 .certificate-item p {
@@ -357,7 +345,7 @@ section {
   background: rgba(100, 255, 218, 0.1);
 }
 
-/* Galeria de projetos - VERSÃO ATUALIZADA */
+/* Galeria de projetos - ATUALIZADO */
 .projects-gallery {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
@@ -372,8 +360,6 @@ section {
   text-align: center;
   transition: all 0.3s ease;
   border: 1px solid rgba(100, 255, 218, 0.2);
-  position: relative;
-  overflow: hidden; /* Mantido para o container */
 }
 
 .project-item:hover {
@@ -387,22 +373,12 @@ section {
   border-radius: 5px;
   object-fit: contain;
   margin-bottom: 1rem;
-  transition: transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94), 
-              z-index 0.5s;
-  position: relative;
-  z-index: 1;
-  transform-origin: center center;
-  will-change: transform;
+  transition: transform 0.3s ease;
+  cursor: pointer;
 }
 
-/* EFEITO APENAS NO HOVER DA IMAGEM */
 .project-item img:hover {
-  transform: scale(2.5);
-  z-index: 1000;
-  box-shadow: 0 15px 50px rgba(2, 12, 27, 0.8);
-  border: 2px solid #64ffda;
-  border-radius: 8px;
-  cursor: zoom-in;
+  transform: scale(1.05);
 }
 
 .project-item p {
@@ -502,6 +478,44 @@ section {
   color: #ccd6f6;
 }
 
+/* Modal para imagens expandidas - NOVO */
+.img-modal {
+  display: none;
+  position: fixed;
+  z-index: 2000;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(10, 25, 47, 0.98);
+  justify-content: center;
+  align-items: center;
+}
+
+.img-modal-content {
+  max-width: 90%;
+  max-height: 90%;
+  border: 3px solid #64ffda;
+  border-radius: 8px;
+  box-shadow: 0 0 30px rgba(100, 255, 218, 0.6);
+}
+
+.img-close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  color: #64ffda;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: color 0.3s;
+  z-index: 2001;
+}
+
+.img-close:hover {
+  color: #ccd6f6;
+}
+
 /* Responsividade */
 @media (min-width: 768px) {
   .site-title { font-size: 5rem; }
@@ -523,12 +537,6 @@ section {
   .projects-gallery {
     grid-template-columns: repeat(2, 1fr);
   }
-  
-  /* Ajuste para telas médias */
-  .certificate-item img:hover,
-  .project-item img:hover {
-    transform: scale(2.2);
-  }
 }
 
 @media (min-width: 992px) {
@@ -544,11 +552,5 @@ section {
   }
   .user-details > p {
     padding: 0 2rem;
-  }
-  
-  /* Ajuste para telas grandes */
-  .certificate-item img:hover,
-  .project-item img:hover {
-    transform: scale(2.8);
   }
 }

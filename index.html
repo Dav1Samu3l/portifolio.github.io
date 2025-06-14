@@ -2,19 +2,13 @@
 <html lang="pt-br">
 
 <head>
-  <!-- Metadados da Página Web -->
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description" content="Site de Portfólio" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-  <!-- Logo da Página Web -->
   <link rel="shortcut icon" href="./assets/img/favicon.ico" />
-  <!-- Título da Página Web -->
   <title>Davi Samuel da Silva</title>
-
-  <!-- Importar CSS: Estilo Principal -->
   <link rel="stylesheet" href="./assets/css/main.css" />
   <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
 </head>
@@ -50,9 +44,7 @@
     <a class="down" href="#about" data-scroll><i class="icon fa fa-chevron-down" aria-hidden="true"></i></a>
   </div>
   
-  <!-- Seção Sobre -->
   <section id="about">
-    <!-- Introdução do Usuário -->
     <div class="user-details">
       <h1>Minha história</h1>
       <picture>
@@ -60,23 +52,20 @@
         <img src="./assets/img/jpg/Professional-Picture-Me.jpg" alt="Eu Profissional" width="20%" style="border-radius: 50%" />
       </picture>
       <p>
-        Sou um profissional de TI apaixonado por tecnologia e desenvolvimento de software. Tenho formação em escolas de
+ Sou um profissional de TI apaixonado por tecnologia e desenvolvimento de software. Tenho formação em escolas de
         excelência em programação, como Kenzie Academy, Trybe e SENAI/SC, e domínio de várias linguagens e ferramentas.
         Tenho experiência em projetos educacionais que envolvem trabalho em equipe e boas práticas de programação. Por
         adventos da vida, precisei retardar minha formação, mas agora, com mais tempo e recursos, consigo me dedicar
         muito mais ao meu desenvolvimento profissional e acadêmico. Atualmente, estou cursando ADS na UNISUL e sou
         técnico em desenvolvimento de sistemas pelo IFSC. Sou um desenvolvedor comprometido e lógico, pronto para fazer
-        parte da sua equipe.
-      </p>
+        parte da sua equipe.      </p>
     </div>
     
-    <!-- Botões lado a lado -->
     <div class="buttons-container">
       <button id="certificates-btn" class="modal-btn">Certificados</button>
       <button id="projects-btn" class="modal-btn">Projetos</button>
     </div>
 
-    <!-- Modal de Certificados -->
     <div id="certificates-modal" class="modal">
       <div class="modal-content">
         <span class="close">&times;</span>
@@ -87,7 +76,6 @@
           </div>
           <div class="certificate-item">
             <img src="./assets/fonts/1684950260971 (1).jpeg" alt="Front-End com React.js">
-            <img src="./assets/fonts/1684950260933 (1).jpeg" alt="Front-End com React.js">
             <p>Front-End com React.js</p>
           </div>
           <div class="certificate-item">
@@ -102,28 +90,25 @@
       </div>
     </div>
 
-    <!-- Modal de Projetos -->
     <div id="projects-modal" class="modal">
       <div class="modal-content">
         <span class="close">&times;</span>
-        <div class="certificates-gallery">
-          <div class="certificate-item">
+        <div class="projects-gallery">
+          <div class="project-item">
             <img src="./assets/img/telas_a3.jpg" alt="Sistema de gerenciamento de estoque em java puro">
             <a target="_blank" href="https://github.com/Dav1Samu3l/A3-final.git">
               <p>Sistema de gerenciamento de estoque em java puro</p>
             </a>
           </div>
         </div>
-        <div class="certificate-controls">
+        <div class="project-controls">
           <button class="prev-btn">&lt;</button>
           <button class="next-btn">&gt;</button>
         </div>
       </div>
     </div>
 
-    <!-- Especificações do Usuário -->
     <div class="user">
-      <!-- Tecnologia #1: Linguagens -->
       <div class="tech">
         <h2>Linguagens</h2>
         <i class="devicon-javascript-plain colored"></i>
@@ -163,11 +148,14 @@
     <p> Davi Samuel da Silva, 2025</p>
   </footer>
 
-  <!-- Importar JS: Tema Partículas -->
+  <!-- Modal para imagens expandidas -->
+  <div id="imgModal" class="img-modal">
+    <span class="img-close">&times;</span>
+    <img class="img-modal-content" id="expandedImg">
+  </div>
+
   <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-  <!-- Importar JS: Sweet Scroll -->
   <script src="./assets/js/sweet-scroll.min.js"></script>
-  <!-- Importar JS: Script Principal -->
   <script src="./assets/js/main.js"></script>
   <script src="./assets/js/modal.js"></script>
 </body>
