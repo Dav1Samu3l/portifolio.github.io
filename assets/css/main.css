@@ -1,7 +1,7 @@
 * {
   box-sizing: border-box;
   margin: 0;
-  padding: 0;
+  padding: 0
 }
 
 body {
@@ -11,47 +11,50 @@ body {
   line-height: 1.5;
   color: #555;
   font-family: 'Nunito Sans', sans-serif;
-  background: #0a192f;
+  background: #0a192f
 }
 
-h1, h2, h3, h4, strong {
+h1,
+h2,
+h3,
+h4,
+strong {
   margin-top: 1em;
   padding-top: 1em;
   line-height: 1.25;
-  color: #ccd6f6;
+  color: #ccd6f6
 }
 
 h1 {
-  font-size: 2.5rem;
+  font-size: 2.5rem
 }
 
 h2 {
   font-size: 2rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.5rem
 }
 
 a {
   color: #64ffda;
   text-decoration: none;
-  transition: all 0.3s ease;
+  transition: all 0.3s ease
 }
 
 a:hover {
   color: #ccd6f6;
-  text-decoration: underline;
+  text-decoration: underline
 }
 
 p {
   margin: 1em 0;
   color: #a8b2d1;
-  line-height: 1.6;
+  line-height: 1.6
 }
 
 section {
-  padding: 4rem 0;
+  padding: 4rem 0
 }
 
-/* Header */
 #particles-js {
   background: linear-gradient(to right, #2B32B2, #0a192f);
   display: flex;
@@ -61,7 +64,7 @@ section {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  position: relative;
+  position: relative
 }
 
 .header {
@@ -73,7 +76,7 @@ section {
   width: 80%;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%)
 }
 
 .site-title {
@@ -81,7 +84,7 @@ section {
   display: block;
   line-height: 1;
   color: #fff;
-  margin-bottom: 0.5rem;
+  margin-bottom: .5rem
 }
 
 .site-description {
@@ -89,14 +92,14 @@ section {
   display: block;
   line-height: 1;
   color: #ccd6f6;
-  margin-bottom: 2rem;
+  margin-bottom: 2rem
 }
 
 .header-icons {
   display: flex;
   justify-content: center;
   gap: 1rem;
-  margin-bottom: 2rem;
+  margin-bottom: 2rem
 }
 
 .header-icons .icon {
@@ -110,32 +113,32 @@ section {
   align-items: center;
   justify-content: center;
   font-size: 1.5rem;
-  transition: all 0.3s ease;
+  transition: all 0.3s ease
 }
 
 .header-icons .icon:hover {
   background: #64ffda;
   color: #0a192f;
-  transform: translateY(-3px);
+  transform: translateY(-3px)
 }
 
 .header-links {
   display: flex;
   justify-content: center;
-  gap: 1.5rem;
+  gap: 1.5rem
 }
 
 .header-links .link {
   color: #ccd6f6;
   font-size: 1.1rem;
-  padding: 0.5rem 1rem;
+  padding: .5rem 1rem;
   border: 1px solid #64ffda;
   border-radius: 4px;
-  transition: all 0.3s ease;
+  transition: all 0.3s ease
 }
 
 .header-links .link:hover {
-  background: rgba(100, 255, 218, 0.1);
+  background: rgb(100 255 218 / .1)
 }
 
 .down {
@@ -146,21 +149,27 @@ section {
   color: #ccd6f6;
   font-size: 2rem;
   animation: pulse 1.5s infinite;
-  cursor: pointer;
+  cursor: pointer
 }
 
 @keyframes pulse {
-  0%, 100% { transform: translateX(-50%) scale(1); }
-  50% { transform: translateX(-50%) scale(1.1); }
+
+  0%,
+  100% {
+    transform: translateX(-50%) scale(1)
+  }
+
+  50% {
+    transform: translateX(-50%) scale(1.1)
+  }
 }
 
-/* Sobre Mim */
 #about {
   background: #0a192f;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: center
 }
 
 .user-details {
@@ -170,13 +179,13 @@ section {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: center
 }
 
-.user-details > h1 {
+.user-details>h1 {
   margin-bottom: 1.5rem;
   width: 100%;
-  text-align: center;
+  text-align: center
 }
 
 .user-details picture {
@@ -184,7 +193,7 @@ section {
   margin: 0 auto 1.5rem;
   overflow: hidden;
   border-radius: 50%;
-  position: relative;
+  position: relative
 }
 
 .user-details img {
@@ -195,47 +204,45 @@ section {
   object-fit: cover;
   margin: 0 auto;
   display: block;
-  transition: transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transition: transform 0.3s cubic-bezier(.25, .46, .45, .94)
 }
 
 .user-details img:hover {
-  transform: scale(1.1);
+  transform: scale(1.1)
 }
 
-.user-details > p {
+.user-details>p {
   max-width: 800px;
   margin-bottom: 2rem;
-  text-align: center;
+  text-align: center
 }
 
-/* Botões lado a lado */
 .buttons-container {
   display: flex;
   justify-content: center;
   gap: 1.5rem;
   margin: 2rem 0;
   width: 100%;
-  flex-wrap: wrap;
+  flex-wrap: wrap
 }
 
 .modal-btn {
-  background: transparent;
+  background: #fff0;
   border: 1px solid #64ffda;
   color: #64ffda;
-  padding: 0.8rem 1.8rem;
+  padding: .8rem 1.8rem;
   border-radius: 4px;
   cursor: pointer;
   font-size: 1.1rem;
   font-weight: 500;
   transition: all 0.3s ease;
-  min-width: 180px;
+  min-width: 180px
 }
 
 .modal-btn:hover {
-  background: rgba(100, 255, 218, 0.1);
+  background: rgb(100 255 218 / .1)
 }
 
-/* Modais */
 .modal {
   display: none;
   position: fixed;
@@ -244,8 +251,8 @@ section {
   top: 0;
   width: 100%;
   height: 100%;
-  background: rgba(10, 25, 47, 0.95);
-  overflow: auto;
+  background: rgb(10 25 47 / .95);
+  overflow: auto
 }
 
 .modal-content {
@@ -256,15 +263,15 @@ section {
   width: 90%;
   max-width: 900px;
   border-radius: 8px;
-  box-shadow: 0 10px 30px rgba(2, 12, 27, 0.7);
-  border: 1px solid #64ffda;
+  box-shadow: 0 10px 30px rgb(2 12 27 / .7);
+  border: 1px solid #64ffda
 }
 
 .modal-content h2 {
   text-align: center;
   color: #64ffda;
   margin-bottom: 2rem;
-  font-size: 2.2rem;
+  font-size: 2.2rem
 }
 
 .close {
@@ -272,36 +279,35 @@ section {
   top: 1.5rem;
   right: 1.5rem;
   font-size: 2rem;
-  font-weight: bold;
+  font-weight: 700;
   cursor: pointer;
   color: #64ffda;
-  transition: color 0.3s ease;
+  transition: color 0.3s ease
 }
 
 .close:hover {
-  color: #ccd6f6;
+  color: #ccd6f6
 }
 
-/* Galeria de certificados - ATUALIZADO */
 .certificates-gallery {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   gap: 2rem;
-  margin: 2rem 0;
+  margin: 2rem 0
 }
 
 .certificate-item {
-  background: rgba(255, 255, 255, 0.05);
+  background: rgb(255 255 255 / .05);
   border-radius: 8px;
   padding: 1.5rem;
   text-align: center;
   transition: all 0.3s ease;
-  border: 1px solid rgba(100, 255, 218, 0.2);
+  border: 1px solid rgb(100 255 218 / .2)
 }
 
 .certificate-item:hover {
   transform: translateY(-5px);
-  border-color: #64ffda;
+  border-color: #64ffda
 }
 
 .certificate-item img {
@@ -311,60 +317,59 @@ section {
   object-fit: contain;
   margin-bottom: 1rem;
   transition: transform 0.3s ease;
-  cursor: pointer;
+  cursor: pointer
 }
 
 .certificate-item img:hover {
-  transform: scale(1.05);
+  transform: scale(1.05)
 }
 
 .certificate-item p {
   color: #64ffda;
-  font-weight: 600;
+  font-weight: 600
 }
 
 .certificate-controls {
   display: flex;
   justify-content: center;
   gap: 1rem;
-  margin-top: 1.5rem;
+  margin-top: 1.5rem
 }
 
 .certificate-controls button {
-  background: transparent;
+  background: #fff0;
   border: 1px solid #64ffda;
   color: #64ffda;
-  padding: 0.6rem 1.2rem;
+  padding: .6rem 1.2rem;
   border-radius: 4px;
   cursor: pointer;
   transition: all 0.3s ease;
-  font-size: 1rem;
+  font-size: 1rem
 }
 
 .certificate-controls button:hover {
-  background: rgba(100, 255, 218, 0.1);
+  background: rgb(100 255 218 / .1)
 }
 
-/* Galeria de projetos - ATUALIZADO */
 .projects-gallery {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   gap: 2rem;
-  margin: 2rem 0;
+  margin: 2rem 0
 }
 
 .project-item {
-  background: rgba(255, 255, 255, 0.05);
+  background: rgb(255 255 255 / .05);
   border-radius: 8px;
   padding: 1.5rem;
   text-align: center;
   transition: all 0.3s ease;
-  border: 1px solid rgba(100, 255, 218, 0.2);
+  border: 1px solid rgb(100 255 218 / .2)
 }
 
 .project-item:hover {
   transform: translateY(-5px);
-  border-color: #64ffda;
+  border-color: #64ffda
 }
 
 .project-item img {
@@ -374,111 +379,108 @@ section {
   object-fit: contain;
   margin-bottom: 1rem;
   transition: transform 0.3s ease;
-  cursor: pointer;
+  cursor: pointer
 }
 
 .project-item img:hover {
-  transform: scale(1.05);
+  transform: scale(1.05)
 }
 
 .project-item p {
   color: #64ffda;
   font-weight: 600;
-  margin-bottom: 0.5rem;
+  margin-bottom: .5rem
 }
 
 .project-desc {
   color: #a8b2d1;
   min-height: 60px;
-  margin-bottom: 1rem;
+  margin-bottom: 1rem
 }
 
 .project-links {
   display: flex;
   justify-content: center;
-  gap: 1.2rem;
+  gap: 1.2rem
 }
 
 .project-links a {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
-  font-size: 0.95rem;
+  gap: .5rem;
+  font-size: .95rem
 }
 
 .project-links a i {
-  font-size: 1.2rem;
+  font-size: 1.2rem
 }
 
 .project-controls {
   display: flex;
   justify-content: center;
   gap: 1rem;
-  margin-top: 1.5rem;
+  margin-top: 1.5rem
 }
 
 .project-controls button {
-  background: transparent;
+  background: #fff0;
   border: 1px solid #64ffda;
   color: #64ffda;
-  padding: 0.6rem 1.2rem;
+  padding: .6rem 1.2rem;
   border-radius: 4px;
   cursor: pointer;
   transition: all 0.3s ease;
-  font-size: 1rem;
+  font-size: 1rem
 }
 
 .project-controls button:hover {
-  background: rgba(100, 255, 218, 0.1);
+  background: rgb(100 255 218 / .1)
 }
 
-/* Tecnologias */
 .user {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 2rem;
-  margin-top: 3rem;
+  margin-top: 3rem
 }
 
 .tech {
   text-align: center;
   padding: 1.5rem;
-  background: rgba(255, 255, 255, 0.05);
+  background: rgb(255 255 255 / .05);
   border-radius: 8px;
-  border: 1px solid rgba(100, 255, 218, 0.2);
+  border: 1px solid rgb(100 255 218 / .2)
 }
 
 .tech h2 {
   font-size: 1.5rem;
   margin-bottom: 1.5rem;
-  color: #64ffda;
+  color: #64ffda
 }
 
 .tech i {
   font-size: 3.5rem;
-  margin: 0.8rem;
-  transition: transform 0.3s ease;
+  margin: .8rem;
+  transition: transform 0.3s ease
 }
 
 .tech i:hover {
-  transform: translateY(-5px);
+  transform: translateY(-5px)
 }
 
-/* Footer */
 .footer {
   background: linear-gradient(to right, #2B32B2, #0a192f);
   padding: 2rem 0;
   text-align: center;
   color: #ccd6f6;
-  margin-top: 2rem;
+  margin-top: 2rem
 }
 
 .footer p {
   font-size: 1.1rem;
-  color: #ccd6f6;
+  color: #ccd6f6
 }
 
-/* Modal para imagens expandidas - NOVO */
 .img-modal {
   display: none;
   position: fixed;
@@ -487,9 +489,9 @@ section {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(10, 25, 47, 0.98);
+  background: rgb(10 25 47 / .98);
   justify-content: center;
-  align-items: center;
+  align-items: center
 }
 
 .img-modal-content {
@@ -497,7 +499,7 @@ section {
   max-height: 90%;
   border: 3px solid #64ffda;
   border-radius: 8px;
-  box-shadow: 0 0 30px rgba(100, 255, 218, 0.6);
+  box-shadow: 0 0 30px rgb(100 255 218 / .6)
 }
 
 .img-close {
@@ -506,51 +508,65 @@ section {
   right: 30px;
   color: #64ffda;
   font-size: 40px;
-  font-weight: bold;
+  font-weight: 700;
   cursor: pointer;
   transition: color 0.3s;
-  z-index: 2001;
+  z-index: 2001
 }
 
 .img-close:hover {
-  color: #ccd6f6;
+  color: #ccd6f6
 }
 
-/* Responsividade */
-@media (min-width: 768px) {
-  .site-title { font-size: 5rem; }
-  .site-description { font-size: 2.2rem; }
+@media (min-width:768px) {
+  .site-title {
+    font-size: 5rem
+  }
+
+  .site-description {
+    font-size: 2.2rem
+  }
+
   .header-icons .icon {
     width: 60px;
     height: 60px;
-    font-size: 1.8rem;
+    font-size: 1.8rem
   }
+
   .user-details {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    gap: 0;
+    gap: 0
   }
+
   .certificates-gallery {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr)
   }
+
   .projects-gallery {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr)
   }
 }
 
-@media (min-width: 992px) {
-  .site-title { font-size: 6rem; }
+@media (min-width:992px) {
+  .site-title {
+    font-size: 6rem
+  }
+
   .certificates-gallery {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr)
   }
+
   .projects-gallery {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr)
   }
+
   .user {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, 1fr)
   }
-  .user-details > p {
-    padding: 0 2rem;
+
+  .user-details>p {
+    padding: 0 2rem
   }
 }
