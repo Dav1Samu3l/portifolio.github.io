@@ -441,7 +441,9 @@ section {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 2rem;
-  margin-top: 3rem
+  margin-top: 3rem;
+  padding-left: 2%;
+  padding-right: 2%
 }
 
 .tech {
@@ -470,7 +472,7 @@ section {
 
 .footer {
   background: linear-gradient(to right, #2B32B2, #0a192f);
-  padding: 2rem 0;
+  padding: 0.1rem 0;
   text-align: center;
   color: #ccd6f6;
   margin-top: 2rem
