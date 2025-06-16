@@ -2,15 +2,15 @@
 <html lang="pt-br">
 
 <head>
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Site de Portfólio" />
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Site de Portfólio">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="shortcut icon" href="./assets/img/favicon.ico" />
+  <link rel="shortcut icon" href="./assets/img/favicon.ico">
   <title>Davi Samuel da Silva</title>
-  <link rel="stylesheet" href="./assets/css/main.css" />
-  <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+  <link rel="stylesheet" href="./assets/css/main.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
 </head>
 
 <body>
@@ -46,12 +46,13 @@
 
   <section id="about">
     <div class="user-details">
-      <h1>Minha história</h1>
+      <h2>Minha história</h2>
       <picture>
-        <source type="image/webp" srcset="https://avatars.githubusercontent.com/u/106498376?v=4" alt="Eu Profissional"
-          width="20%" style="border-radius: 50%" />
-        <img src="./assets/img/jpg/Professional-Picture-Me.jpg" alt="Eu Profissional" width="20%"
-          style="border-radius: 50%" />
+        <!-- CORREÇÃO: removido atributos inválidos do source -->
+        <source type="image/webp" srcset="https://avatars.githubusercontent.com/u/106498376?v=4">
+        <!-- CORREÇÃO: width percentual movido para CSS inline -->
+        <img src="./assets/img/jpg/Professional-Picture-Me.jpg" alt="Eu Profissional" 
+             style="width: 94%;border-radius:50%">
       </picture>
       <p>
         Sou um profissional de TI apaixonado por tecnologia e desenvolvimento de software. Tenho formação em escolas de
@@ -73,15 +74,15 @@
         <span class="close">&times;</span>
         <div class="certificates-gallery">
           <div class="certificate-item">
-            <img src="./assets/fonts/Ix1IDEA.jpg" alt="projeto de sistemas web Certificado">
+            <img src="./assets/fonts/Ix1IDEA.jpg" alt="projeto de sistemas web Certificado" style="width:100%">
             <p>projeto de sistemas web</p>
           </div>
           <div class="certificate-item">
-            <img src="./assets/fonts/1684950260971 (1).jpeg" alt="Front-End com React.js">
+            <img src="./assets/fonts/1684950260971(1).jpeg" alt="Front-End com React.js" style="width:100%">
             <p>Front-End com React.js</p>
           </div>
           <div class="certificate-item">
-            <img src="./assets/fonts/POO40h.jpg" alt="Certificado P.O.O curso em video / Guanabara">
+            <img src="./assets/fonts/POO40h.jpg" alt="Certificado P.O.O curso em video / Guanabara" style="width:100%">
             <p>Programação Orientada a Objetos (POO)</p>
           </div>
         </div>
@@ -96,35 +97,29 @@
       <div class="modal-content">
         <span class="close">&times;</span>
         <div class="projects-gallery">
-
-
-
-
           <div class="project-item">
-            <img src="./assets/img/telas_a3.jpg" alt="Sistema de gerenciamento de estoque em java puro">
+            <img src="./assets/img/telas_a3.jpg" alt="Sistema de gerenciamento de estoque em java puro" style="width:100%">
             <a target="_blank" href="https://github.com/Dav1Samu3l/A3-final.git">
               <p>Sistema de gerenciamento de estoque em java puro</p>
             </a>
           </div>
 
           <div class="project-item">
-            <img src="./assets/fonts/image.png" alt="Sistema de gerenciamento de estoque em java puro">
+            <img src="./assets/fonts/image.png" alt="Sistema de gerenciamento de estoque em java puro" style="width:100%">
             <a target="_blank" href="https://pharmlabr.netlify.app/sair">
               <p>LabFarmaci: Sistema de Gerenciamento de Farmácias e Estoques com React.js ( WEB APP ) </p>
-              </p>
             </a>
           </div>
 
-
           <div class="project-item">
-            <img src="./assets/fonts/image2.png" alt=" Pagina de vendas de produtos com HTML, CSS e JavaScript">
+            <img src="./assets/fonts/image2.png" alt=" Pagina de vendas de produtos com HTML, CSS e JavaScript" style="width:100%">
             <a target="_blank" href="https://dav1samu3l.github.io/lland/">
               <p>Pagina de vendas de produtos com HTML, CSS e JavaScript</p>
             </a>
           </div>
 
           <div class="project-item">
-            <img src="./assets/fonts/image3.png" alt=" Pagina de cadastro de usuarios com HTML, CSS e JavaScript">
+            <img src="./assets/fonts/image3.png" alt=" Pagina de cadastro de usuarios com HTML, CSS e JavaScript" style="width:100%">
             <a target="_blank" href="https://nova-pasta-hre7en4o4-dav1samu3l.vercel.app/">
               <p>Pagina de cadastro usuarios com HTML, CSS e JavaScript</p>
             </a>
@@ -132,20 +127,12 @@
 
           <div class="project-item">
             <img src="./assets/fonts/image4.png"
-              alt=" Back end desenvolvido para fins de estudo e demonstração do uso de APIs, bancos de dados e lógica de servidor">
+              alt=" Back end desenvolvido para fins de estudo e demonstração do uso de APIs, bancos de dados e lógica de servidor" style="width:100%">
             <a target="_blank" href="https://github.com/Dav1Samu3l/M2S08">
               <p>Back end desenvolvido para demonstração do uso de APIs, bancos de dados e lógica de servidor com
                 Node.js</p>
             </a>
           </div>
-
-
-
-
-
-
-
-
         </div>
         <div class="project-controls">
           <!-- <button class="prev-btn">&lt;</button>
@@ -197,7 +184,10 @@
   <!-- Modal para imagens expandidas -->
   <div id="imgModal" class="img-modal">
     <span class="img-close">&times;</span>
-    <img class="img-modal-content" id="expandedImg">
+    <img class="img-modal-content" id="expandedImg" 
+         src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" 
+         alt="Imagem expandida" 
+         style="width:auto">
   </div>
 
   <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
